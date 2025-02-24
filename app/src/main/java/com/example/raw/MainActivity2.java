@@ -11,7 +11,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+/**
+ * @author  ior Shem Tov
+ * @version	1.1
+ * @since	24/02/2025
+ * Credit page
+ */
+
+/**
+ * The type Main activity 2.
+ */
 public class MainActivity2 extends AppCompatActivity {
+    /**
+     * The Si.
+     */
     Intent si;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

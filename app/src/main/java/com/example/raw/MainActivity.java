@@ -18,9 +18,23 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-
+/**
+ * @author  ior Shem Tov
+ * @version	1.1
+ * @since	24/02/2025
+ * Do all the functionality of the app
+ */
+/**
+ * The type Main activity.
+ */
 public class MainActivity extends AppCompatActivity {
+    /**
+     * The Tv 1.
+     */
     TextView tv1;
+    /**
+     * The E d 1.
+     */
     EditText eD1;
     private final String FILENAME = "text.txt";
     @Override
@@ -32,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * Weddings.
+     */
     public void weddings()
     {
         tv1 = findViewById(R.id.tv1);
@@ -39,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * Btn raw file.
+     *
+     * @param view the view
+     */
     public void btn_raw_file(View view) {
         String fileName = FILENAME.substring(0,FILENAME.length()-4);
         int resourceId = this.getResources().getIdentifier(fileName,
@@ -65,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Brn text.
+     *
+     * @param view the view
+     */
     public void brn_text(View view)
     {
         String data = eD1.getText().toString();
